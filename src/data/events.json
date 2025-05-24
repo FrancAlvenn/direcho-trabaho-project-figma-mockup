@@ -1,0 +1,48 @@
+[
+  {
+    "id": "event-001",
+    "title": "Summer Beats Festival",
+    "tags": ["music", "outdoor", "festival"],
+    "about": "A three-day outdoor music festival featuring top DJs and artists.",
+    "vibe": ["energetic", "youthful", "party"],
+    "location": "Central Park, NYC",
+    "date_range": {
+      "start": "2025-06-20",
+      "end": "2025-06-22"
+    },
+    "similar_events": ["event-002", "event-005"],
+    "artists": [
+      {
+        "id": "artist-001",
+        "name": "DJ Nova",
+        "image": "/images/artists/dj-nova.png"
+      },
+      {
+        "id": "artist-002",
+        "name": "Solar Echo",
+        "image": "/images/artists/solar-echo.png"
+      }
+    ],
+    "price_range": {
+      "min": 50,
+      "max": 150
+    },
+    "useful_info": {
+      "type_of_event": "Music Festival",
+      "theatre": null,
+      "website": "https://summerbeats.example.com",
+      "age_appropriate": "18+",
+      "contact_number": "1-415-756-3453"
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 100,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 120,
+        "currency": "USD"
+      }
+    }
+  }
+]
