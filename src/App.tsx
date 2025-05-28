@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import AboutSection from './components/AboutPage/About.jsx';
 function App() {
   return (
     <div className="App">
-      <div className="w-48 h-48 rounded-lg bg-blue-500"></div>
+        <AboutSection/>
     </div>
   );
 }
