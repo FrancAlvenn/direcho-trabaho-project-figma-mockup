@@ -1,46 +1,144 @@
 [
   {
-    "id": "event-001",
-    "title": "Summer Beats Festival",
-    "tags": ["music", "outdoor", "festival"],
-    "about": "A three-day outdoor music festival featuring top DJs and artists.",
-    "vibe": ["energetic", "youthful", "party"],
-    "location": "Central Park, NYC",
+    "id": "event-002",
+    "title": "SF Orchestra",
+    "tags": ["orchestra", "classical", "live"],
+    "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+    "vibe": ["elegant", "thought-provoking"],
+    "location": "San Francisco, CA",
     "date_range": {
-      "start": "2025-06-20",
-      "end": "2025-06-22"
+      "start": "2025-07-10",
+      "end": "2025-07-10"
     },
-    "similar_events": ["event-002", "event-005"],
-    "artists": [
-      {
-        "id": "artist-001",
-        "name": "DJ Nova",
-        "image": "/images/artists/dj-nova.png"
-      },
-      {
-        "id": "artist-002",
-        "name": "Solar Echo",
-        "image": "/images/artists/solar-echo.png"
-      }
-    ],
+    "similar_events": ["event-003"],
+    "artists": [],
     "price_range": {
       "min": 50,
-      "max": 150
+      "max": 100
     },
     "useful_info": {
-      "type_of_event": "Music Festival",
-      "theatre": null,
-      "website": "https://summerbeats.example.com",
-      "age_appropriate": "18+",
-      "contact_number": "1-415-756-3453"
+      "type_of_event": "Orchestra",
+      "theatre": "SF Opera House",
+      "website": null,
+      "age_appropriate": "All Ages",
+      "contact_number": null
     },
     "standard_pricing": {
       "Member": {
-        "price": 100,
+        "price": 50,
         "currency": "USD"
       },
       "Standard": {
-        "price": 120,
+        "price": 100,
+        "currency": "USD"
+      }
+    }
+  },
+  {
+    "id": "event-003",
+    "title": "Jeffery Sampson",
+    "tags": ["theatre", "drama"],
+    "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+    "vibe": ["serious", "intellectual"],
+    "location": "New York City, NY",
+    "date_range": {
+      "start": "2025-08-05",
+      "end": "2025-08-05"
+    },
+    "similar_events": ["event-002"],
+    "artists": [],
+    "price_range": {
+      "min": 50,
+      "max": 100
+    },
+    "useful_info": {
+      "type_of_event": "Theatrical Performance",
+      "theatre": "Downtown Playhouse",
+      "website": null,
+      "age_appropriate": "16+",
+      "contact_number": null
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
+        "currency": "USD"
+      }
+    }
+  },
+  {
+    "id": "event-004",
+    "title": "SF Symphony Sound Box",
+    "tags": ["symphony", "experimental", "classical"],
+    "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+    "vibe": ["innovative", "artsy"],
+    "location": "San Francisco, CA",
+    "date_range": {
+      "start": "2025-09-01",
+      "end": "2025-09-01"
+    },
+    "similar_events": ["event-002"],
+    "artists": [],
+    "price_range": {
+      "min": 50,
+      "max": 100
+    },
+    "useful_info": {
+      "type_of_event": "Symphonic Experience",
+      "theatre": "SF Symphony Hall",
+      "website": null,
+      "age_appropriate": "All Ages",
+      "contact_number": null
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
+        "currency": "USD"
+      }
+    }
+  },
+  {
+    "id": "event-005",
+    "title": "Moulin Rouge",
+    "tags": ["musical", "theatre", "romantic"],
+    "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints. ",
+    "vibe": ["romantic", "glamorous"],
+    "location": "New York City, NY",
+    "date_range": {
+      "start": "2025-07-25",
+      "end": "2025-07-25"
+    },
+    "similar_events": ["event-003"],
+    "artists": [],
+    "price_range": {
+      "min": 50,
+      "max": 100
+    },
+    "useful_info": {
+      "type_of_event": "Musical Theatre",
+      "theatre": "Broadway Theatre",
+      "website": null,
+      "age_appropriate": "13+",
+      "contact_number": null
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
         "currency": "USD"
       }
     }
