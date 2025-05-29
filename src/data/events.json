@@ -29,6 +29,185 @@
       "min": 50,
       "max": 150
     }
-  
+  },
+  {
+    "id": "event-002",
+    "title": "SF Orchestra",
+    "tags": ["orchestra", "classical", "live"],
+    "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "vibe": ["elegant", "thought-provoking"],
+    "location": "San Francisco, CA",
+    "date_range": {
+      "start": "2025-07-10",
+      "end": "2025-07-10"
+    },
+    "similar_events": ["event-003"],
+    "artists": [
+      { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
+      { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
+      { "id": "artist-003", "name": "Tom Xander", "image": "/assets/images/actor-3.png" },
+      { "id": "artist-004", "name": "Tom Xander", "image": "/assets/images/actor-4.png" },
+      { "id": "artist-005", "name": "Tom Xander", "image": "/assets/images/actor-5.png" },
+      { "id": "artist-006", "name": "Tom Xander", "image": "/assets/images/actor-6.png" },
+      { "id": "artist-007", "name": "Tom Xander", "image": "/assets/images/actor-7.png" },
+      { "id": "artist-008", "name": "Tom Xander", "image": "/assets/images/actor-8.png" }
+    ],
+    "price_range": {
+      "min": 50,
+      "max": 100
+    },
+    "useful_info": {
+      "type_of_event": "Orchestra",
+      "theatre": "SF Opera House",
+      "website": null,
+      "age_appropriate": "All Ages",
+      "contact_number": null
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
+        "currency": "USD"
+      }
+    }
+  },
+  {
+    "id": "event-003",
+    "title": "Jeffery Sampson",
+    "tags": ["theatre", "drama"],
+    "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "vibe": ["serious", "intellectual"],
+    "location": "New York City, NY",
+    "date_range": {
+      "start": "2025-08-05",
+      "end": "2025-08-05"
+    },
+    "similar_events": ["event-002"],
+    "artists": [
+      { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
+      { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
+      { "id": "artist-003", "name": "Tom Xander", "image": "/assets/images/actor-3.png" },
+      { "id": "artist-004", "name": "Tom Xander", "image": "/assets/images/actor-4.png" },
+      { "id": "artist-005", "name": "Tom Xander", "image": "/assets/images/actor-5.png" },
+      { "id": "artist-006", "name": "Tom Xander", "image": "/assets/images/actor-6.png" },
+      { "id": "artist-007", "name": "Tom Xander", "image": "/assets/images/actor-7.png" },
+      { "id": "artist-008", "name": "Tom Xander", "image": "/assets/images/actor-8.png" }
+    ],
+    "price_range": {
+      "min": 50,
+      "max": 100
+    },
+    "useful_info": {
+      "type_of_event": "Theatrical Performance",
+      "theatre": "Downtown Playhouse",
+      "website": null,
+      "age_appropriate": "16+",
+      "contact_number": null
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
+        "currency": "USD"
+      }
+    }
+  },
+  {
+    "id": "event-004",
+    "title": "SF Symphony Sound Box",
+    "tags": ["symphony", "experimental", "classical"],
+    "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "vibe": ["innovative", "artsy"],
+    "location": "San Francisco, CA",
+    "date_range": {
+      "start": "2025-09-01",
+      "end": "2025-09-01"
+    },
+    "similar_events": ["event-002"],
+    "artists": [
+      { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
+      { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
+      { "id": "artist-003", "name": "Tom Xander", "image": "/assets/images/actor-3.png" },
+      { "id": "artist-004", "name": "Tom Xander", "image": "/assets/images/actor-4.png" },
+      { "id": "artist-005", "name": "Tom Xander", "image": "/assets/images/actor-5.png" },
+      { "id": "artist-006", "name": "Tom Xander", "image": "/assets/images/actor-6.png" },
+      { "id": "artist-007", "name": "Tom Xander", "image": "/assets/images/actor-7.png" },
+      { "id": "artist-008", "name": "Tom Xander", "image": "/assets/images/actor-8.png" }
+    ],
+    "price_range": {
+      "min": 50,
+      "max": 100
+    },
+    "useful_info": {
+      "type_of_event": "Symphonic Experience",
+      "theatre": "SF Symphony Hall",
+      "website": null,
+      "age_appropriate": "All Ages",
+      "contact_number": null
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
+        "currency": "USD"
+      }
+    }
+  },
+  {
+    "id": "event-005",
+    "title": "Moulin Rouge",
+    "tags": ["musical", "theatre", "romantic"],
+    "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+    "vibe": ["romantic", "glamorous"],
+    "location": "New York City, NY",
+    "date_range": {
+      "start": "2025-07-25",
+      "end": "2025-07-25"
+    },
+    "similar_events": ["event-003"],
+    "artists": [
+      { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
+      { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
+      { "id": "artist-003", "name": "Tom Xander", "image": "/assets/images/actor-3.png" },
+      { "id": "artist-004", "name": "Tom Xander", "image": "/assets/images/actor-4.png" },
+      { "id": "artist-005", "name": "Tom Xander", "image": "/assets/images/actor-5.png" },
+      { "id": "artist-006", "name": "Tom Xander", "image": "/assets/images/actor-6.png" },
+      { "id": "artist-007", "name": "Tom Xander", "image": "/assets/images/actor-7.png" },
+      { "id": "artist-008", "name": "Tom Xander", "image": "/assets/images/actor-8.png" }
+    ],
+    "price_range": {
+      "min": 50,
+      "max": 100
+    },
+    "useful_info": {
+      "type_of_event": "Musical Theatre",
+      "theatre": "Broadway Theatre",
+      "website": null,
+      "age_appropriate": "13+",
+      "contact_number": null
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
+        "currency": "USD"
+      }
+    }
   }
 ]
