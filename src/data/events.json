@@ -38,7 +38,8 @@
         "price": 100,
         "currency": "USD"
       }
-    }
+    },
+    "card_image": "/assets/images/bom-2.png"
   },
   {
     "id": "event-002",
@@ -83,7 +84,8 @@
         "price": 100,
         "currency": "USD"
       }
-    }
+    },
+    "card_image": "/assets/images/SF_Orchestra.jpg"
   },
   {
     "id": "event-003",
@@ -128,7 +130,8 @@
         "price": 100,
         "currency": "USD"
       }
-    }
+    },
+    "card_image": "/assets/images/Jeffery_Sampson.jpg"
   },
   {
     "id": "event-004",
@@ -173,7 +176,8 @@
         "price": 100,
         "currency": "USD"
       }
-    }
+    },
+    "card_image": "/assets/images/Sf_Symphony_Sound_Box.jpg"
   },
   {
     "id": "event-005",
@@ -218,6 +222,7 @@
         "price": 100,
         "currency": "USD"
       }
-    }
+    },
+    "card_image": "/assets/images/Moulin_Rouge.jpg"
   }
 ]
