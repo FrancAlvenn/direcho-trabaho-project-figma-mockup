@@ -30,8 +30,8 @@ const AboutSection = () => {
 
   return (
     <div
-      className="flex flex-col bg-black w-full min-h-screen mx-auto font-sans"
-      style={{ height: "1897px", width: "100%" }}
+      className="flex flex-col bg-black w-full min-h-screen h-fit mx-auto font-sans"
+      style={{ height: "1440px", width: "100%" }}
     >
       <div
         className="events-container flex pb-10 pt-10 bg-cover bg-center"
