@@ -1,15 +1,8 @@
 import { useEffect, useState } from "react";
 import { getEvents } from "../../services/events.service";
 import bgImage from "../../assets/images/bom-2.png";
-import { MapPin } from "@phosphor-icons/react";
-import { Globe } from "@phosphor-icons/react";
-import { MaskHappy } from "@phosphor-icons/react";
-import { Person } from "@phosphor-icons/react";
-import { FacebookLogo } from "@phosphor-icons/react";
-import { InstagramLogo } from "@phosphor-icons/react";
-import { YoutubeLogo } from "@phosphor-icons/react";
-import { XLogo } from "@phosphor-icons/react";
-import { Envelope } from "@phosphor-icons/react";
+import { MapPin, Globe, MaskHappy, Person, FacebookLogo, InstagramLogo, YoutubeLogo, XLogo, Envelope } from "@phosphor-icons/react";
+
 
 const Tag = ({ text }) => (
   <span className="flex items-center justify-center w-[90px] h-[32px] text-[14px] text-white bg-[#C2202629] rounded-full border border-[#C22026] backdrop-blur-[16px]">
@@ -34,7 +27,7 @@ const AboutSection = () => {
       style={{ height: "1897px", width: "100%" }}
     >
       <div
-        className="events-container flex pb-10 pt-10 bg-cover bg-center"
+        className="events-container flex pb-10 pt-10 bg-black bg-cover bg-center"
         style={{
           backgroundImage: `url(${bgImage})`,
           height: "600px",
@@ -87,7 +80,7 @@ const AboutSection = () => {
           {event.useful_info?.theatre && (
             <>
               <p className="flex col-span-full gap-2 text-left text-[16px] text-white">
-                <Globe size={22} />
+                <MapPin size={22} />
                 {event.useful_info.theatre}
               </p>
               <hr className="border-t border-black -mx-6" />
@@ -102,7 +95,7 @@ const AboutSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MapPin size={22} />
+                <Globe size={22} />
                 {event.useful_info.website}
               </a>
               <hr className="border-t border-black -mx-6" />
