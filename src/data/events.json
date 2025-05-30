@@ -28,6 +28,16 @@
     "price_range": {
       "min": 50,
       "max": 150
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
+        "currency": "USD"
+      }
     }
   },
   {

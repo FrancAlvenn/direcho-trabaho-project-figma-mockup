@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import AboutSection from './components/AboutPage/About.jsx';
-import EventsContainer from './components/events-card/EventsContainer';
+import EventsContainer from './components/EventsCard/EventsContainer';
 
 function App() {
   return (
