@@ -31,6 +31,16 @@
       "website": "bookofmormon.com/about",
       "age_appropriate": "Ages 16 & up",
       "contact_number": null
+    },
+    "standard_pricing": {
+      "Member": {
+        "price": 50,
+        "currency": "USD"
+      },
+      "Standard": {
+        "price": 100,
+        "currency": "USD"
+      }
     }
   },
   {
