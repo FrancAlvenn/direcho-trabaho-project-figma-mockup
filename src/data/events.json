@@ -11,10 +11,6 @@
       "end": "December 31, 2020"
     },
     "similar_events": ["Glee", "Grease", "High School Musical", "Arrested Development"],
-    "useful_info": {
-      "contact_number": "+1-234-567-8901",
-      "website": "https://bookofmormon.com"
-    },
     "artists": [
       { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
       { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
@@ -27,7 +23,14 @@
     ],
     "price_range": {
       "min": 50,
-      "max": 150
+      "max": 200
+    },
+    "useful_info": {
+      "type_of_event": "Live event",
+      "theatre": "Golden Gate Theatre",
+      "website": "bookofmormon.com/about",
+      "age_appropriate": "Ages 16 & up",
+      "contact_number": null
     },
     "standard_pricing": {
       "Member": {
