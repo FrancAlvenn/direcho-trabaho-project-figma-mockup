@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import EventCard from "./EventCard";
 import { getEvents } from "../../services/events.service";
+import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
 
-const EventsContainer = () => {
+const EventsContainer = ({ title }) => {
     const [events, setEvents] = useState(null);
     const [loading, setLoading] = useState(true);
+    const scrollRef = useRef(null);
 
     useEffect(() => {
         getEvents().then((data) => {
@@ -12,17 +14,55 @@ const EventsContainer = () => {
             setLoading(false);
         });
     }, []);
-    
+
+    const scrollLeft = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+        }
+    };
+
     return (
-        <div className="events-container flex justify-center items-center bg-black pb-10 pt-10">
-            <div className="events-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <h2 className="col-span-full text-left text-[24px] font-bold text-white">Upcoming Events</h2>
+        <div className="bg-black pb-10 px-5 lg:px-30">
+            {/* Header with buttons */}
+            <div className="flex justify-between items-center mb-4 text-white">
+                <h2 className="text-[24px] mb-2 font-bold">{title}</h2>
+                <div className="flex gap-2">
+                    <button
+                        onClick={scrollLeft}
+                        className="p-2 rounded-full bg-[#1E1F22] text-white hover:bg-[#333333] hover:text-white"
+                    >
+                        <CaretLeftIcon className="w-5 h-5" />
+                    </button>
+                    <button
+                        onClick={scrollRight}
+                        className="p-2 rounded-full bg-[#1E1F22] text-white hover:bg-[#333333] hover:text-white"
+                    >
+                        <CaretRightIcon className="w-5 h-5" />
+                    </button>
+                </div>
+            </div>
+
+            {/* Scrollable card container */}
+            <div
+                ref={scrollRef}
+                className="flex gap-4 overflow-x-auto scroll-container"
+            >
                 {loading ? (
-                    <p className="col-span-full text-center">Loading events...</p>
+                    <p className="text-white">Loading events...</p>
                 ) : events?.length === 0 ? (
-                    <p className="col-span-full text-center">No events available</p>
+                    <p className="text-white">No events available</p>
                 ) : (
-                    events.map((event) => <EventCard key={event.id} event={event} />)
+                    events.map((event) => (
+                        <div key={event.id} className="flex-shrink-0 min-w-[282px] scroll-container">
+                            <EventCard event={event} />
+                        </div>
+                    ))
                 )}
             </div>
         </div>

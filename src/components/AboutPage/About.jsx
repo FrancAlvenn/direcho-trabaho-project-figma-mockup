@@ -5,7 +5,7 @@ import AboutSection from "./AboutSection";
 
 const About = () => {
   return (
-    <div className="flex bg-black w-full h-[1897px] min-h-screen mx-auto font-sans">
+    <div className="flex bg-black w-full h-[1440px] min-h-screen mx-auto font-sans">
       <div
         className="events-container flex flex-wrap justify-between pb-10 pt-10 bg-black bg-cover bg-center w-full h-[600px]"
         style={{ backgroundImage: `url(${bgImage})` }}
