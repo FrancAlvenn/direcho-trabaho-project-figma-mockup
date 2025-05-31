@@ -1,16 +1,8 @@
 import { useEffect, useState } from "react";
 import { getEvents } from "../../services/events.service";
-import {
-  MapPin,
-  Globe,
-  MaskHappy,
-  Person,
-  FacebookLogo,
-  InstagramLogo,
-  YoutubeLogo,
-  XLogo,
-  Envelope,
-} from "@phosphor-icons/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMasksTheater, faGlobe, faPeopleGroup, faLocationDot,faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {faFacebookF, faInstagram, faYoutube, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 const UsefulInfoSP = () => {
   const [event, setEvent] = useState(null);
@@ -38,14 +30,14 @@ const UsefulInfoSP = () => {
 
         {event.useful_info?.type_of_event && (
           <p className="flex items-center border-b border-black py-[17px] pl-[24px] w-full text-sm sm:text-base gap-2 hover:text-[#9EB7D4] transition-colors duration-200">
-            <MaskHappy size={22} />
+            <FontAwesomeIcon icon={faMasksTheater} style={{ fontSize: "22px" }} />
             {event.useful_info.type_of_event}
           </p>
         )}
 
         {event.useful_info?.theatre && (
           <p className="flex items-center border-b border-black py-[17px] pl-[24px] w-full text-sm sm:text-base gap-2 hover:text-[#9EB7D4] transition-colors duration-200">
-            <MapPin size={22} />
+            <FontAwesomeIcon icon={faLocationDot} style={{ fontSize: "22px" }} />
             {event.useful_info.theatre}
           </p>
         )}
@@ -57,14 +49,14 @@ const UsefulInfoSP = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Globe size={22} />
+            <FontAwesomeIcon icon={faGlobe} style={{ fontSize: "22px" }} />
             {event.useful_info.website}
           </a>
         )}
 
         {event.useful_info?.age_appropriate && (
           <p className="flex items-center border-b border-black py-[17px] pl-[24px] w-full text-sm sm:text-base gap-2 hover:text-[#9EB7D4] transition-colors duration-200">
-            <Person size={22} />
+            <FontAwesomeIcon icon={faPeopleGroup} style={{ fontSize: "22px" }} />
             {event.useful_info.age_appropriate}
           </p>
         )}
@@ -72,19 +64,19 @@ const UsefulInfoSP = () => {
         {/* Social Media Icons */}
         <div className="flex gap-3 sm:gap-4 mt-4 px-2 sm:px-6 flex-wrap">
           <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <FacebookLogo size={24} />
+            <FontAwesomeIcon icon={faFacebookF} style={{ fontSize: "24px" }} />
           </div>
           <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <InstagramLogo size={24} />
+            <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "24px" }} />
           </div>
           <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <YoutubeLogo size={24} />
+            <FontAwesomeIcon icon={faYoutube} style={{ fontSize: "24px" }} />
           </div>
           <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <XLogo size={24} />
+            <FontAwesomeIcon icon={faTwitter} style={{ fontSize: "24px" }} />
           </div>
           <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <Envelope size={24} />
+            <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: "24px" }} />
           </div>
         </div>
       </div>
