@@ -9,7 +9,7 @@ const EventTags = ({ tags }) => (
         variant="outlined"
         sx={{
           backgroundColor: "#C2202629",
-          borderColor: "#e11d48",
+          borderColor: "#C22026",
           color: "#fff",
           fontWeight: 500,
           fontSize: { xs: "0.8rem", sm: "1rem" },
@@ -17,6 +17,8 @@ const EventTags = ({ tags }) => (
           borderRadius: "20px",
           px: 1,
           py: 1,
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
         }}
       />
     ))}

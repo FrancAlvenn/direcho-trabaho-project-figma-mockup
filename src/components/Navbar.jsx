@@ -1,10 +1,12 @@
-import Logo from "../assets/images/nav_logo.png";
-
 function Navbar() {
   return (
-    <nav className="absolute top-0 left-0 right-0 h-[48px] mx-[32px] mt-[20px] flex justify-between items-center bg-black">
+    <nav className="absolute top-0 left-0 right-0 h-[48px] mx-[32px] mt-[20px] flex justify-between items-center">
       <div>
-        <img src={Logo} alt="logo" className="h-[48px] w-[63px]" />
+        <img
+          src="../assets/images/nav_logo.png"
+          alt="logo"
+          className="h-[48px] w-[63px]"
+        />
       </div>
       <ul className="flex items-center">
         {/* Events */}

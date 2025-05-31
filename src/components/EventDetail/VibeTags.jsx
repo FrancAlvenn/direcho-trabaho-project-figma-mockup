@@ -13,7 +13,7 @@ const VibeTags = ({ tags }) => (
           variant="outlined"
           sx={{
             backgroundColor: "#C2202629",
-            borderColor: "#e11d48",
+            borderColor: "#C22026",
             color: "#fff",
             fontSize: { xs: "0.8rem", sm: "1rem" },
             height: { xs: 30, sm: 40 },
