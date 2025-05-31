@@ -3,7 +3,7 @@ import EventCard from "./EventCard";
 import { getEvents } from "../../services/events.service";
 import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
 
-const EventsContainer = () => {
+const EventsContainer = ({ title }) => {
     const [events, setEvents] = useState(null);
     const [loading, setLoading] = useState(true);
     const scrollRef = useRef(null);
@@ -28,10 +28,10 @@ const EventsContainer = () => {
     };
 
     return (
-        <div className="bg-black pb-10 pt-10 px-38">
+        <div className="bg-black pb-10 px-5 lg:px-30">
             {/* Header with buttons */}
             <div className="flex justify-between items-center mb-4 text-white">
-                <h2 className="text-[24px] mb-2 font-bold">Upcoming Events</h2>
+                <h2 className="text-[24px] mb-2 font-bold">{title}</h2>
                 <div className="flex gap-2">
                     <button
                         onClick={scrollLeft}
@@ -51,7 +51,7 @@ const EventsContainer = () => {
             {/* Scrollable card container */}
             <div
                 ref={scrollRef}
-                className="flex gap-4 overflow-x-auto scrollbar-hide scroll-container"
+                className="flex gap-4 overflow-x-auto scroll-container"
             >
                 {loading ? (
                     <p className="text-white">Loading events...</p>
@@ -59,7 +59,7 @@ const EventsContainer = () => {
                     <p className="text-white">No events available</p>
                 ) : (
                     events.map((event) => (
-                        <div key={event.id} className="flex-shrink-0 min-w-[282px]">
+                        <div key={event.id} className="flex-shrink-0 min-w-[282px] scroll-container">
                             <EventCard event={event} />
                         </div>
                     ))
