@@ -13,8 +13,7 @@ function App() {
       <HomePage/>
       {/* <EventViewPage/> */}
       {/* <EventDetailPage /> */}
-      {/* <AboutSection/>
-      <EventsContainer /> */}
+      {/* <AboutSection/> */}
     </div>
   );
 }
