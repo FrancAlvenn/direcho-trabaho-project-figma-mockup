@@ -1,24 +1,21 @@
-import { useEffect, useState } from "react";
-import { getEvents } from "../../services/events.service";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMasksTheater, faGlobe, faPeopleGroup, faLocationDot,faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import {faFacebookF, faInstagram, faYoutube, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {
+  faMasksTheater,
+  faGlobe,
+  faPeopleGroup,
+  faLocationDot,
+  faEnvelope
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebookF,
+  faInstagram,
+  faYoutube,
+  faTwitter
+} from "@fortawesome/free-brands-svg-icons";
 
-const UsefulInfoSP = () => {
-  const [event, setEvent] = useState(null);
-
-  useEffect(() => {
-    getEvents()
-      .then((data) => {
-        setEvent(data[0]);
-      })
-      .catch((error) => {
-        console.error("Error fetching event data:", error);
-      });
-  }, []);
-
+const UsefulInfoSP = ({ event }) => {
   if (!event) {
-    return <div>Loading...</div>;
+    return <div className="text-white">Loading...</div>;
   }
 
   return (
@@ -63,25 +60,14 @@ const UsefulInfoSP = () => {
 
         {/* Social Media Icons */}
         <div className="flex gap-3 sm:gap-4 mt-4 px-2 sm:px-6 flex-wrap">
-          <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <FontAwesomeIcon icon={faFacebookF} style={{ fontSize: "24px" }} />
-          </div>
-          <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "24px" }} />
-          </div>
-          <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <FontAwesomeIcon icon={faYoutube} style={{ fontSize: "24px" }} />
-          </div>
-          <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <FontAwesomeIcon icon={faTwitter} style={{ fontSize: "24px" }} />
-          </div>
-          <div className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
-            <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: "24px" }} />
-          </div>
+          {[faFacebookF, faInstagram, faYoutube, faTwitter, faEnvelope].map((icon, idx) => (
+            <div key={idx} className="w-[48px] h-[48px] flex items-center justify-center text-white rounded-full border-2 border-black bg-black hover:bg-[#87CEEB] transition-colors duration-200">
+              <FontAwesomeIcon icon={icon} style={{ fontSize: "24px" }} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
-
   );
 };
 
