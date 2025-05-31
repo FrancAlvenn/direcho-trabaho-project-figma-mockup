@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faFilm } from "@fortawesome/free-solid-svg-icons";
-
 function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 h-[48px] mx-[32px] mt-[20px] flex justify-between items-center">
