@@ -1,16 +1,22 @@
 import { TicketIcon, HeartStraightIcon } from "@phosphor-icons/react";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const EventCard = ({ event }) => {
   const [liked, setLiked] = useState(false);
+  const navigate = useNavigate();
 
   const toggleLike = (e) => {
     e.stopPropagation();
     setLiked((prev) => !prev);
   };
 
+  const handleCardClick = () => {
+    navigate(`/event_view/${event.id}`);
+  };
+
   return (
-    <div className="event-card cursor-pointer">
+    <div className="event-card cursor-pointer" onClick={handleCardClick}>
       <ul>
         <div
           className="relative rounded-2xl overflow-hidden shadow-md w-[282px] h-[482px] bg-[#1E1F22] text-white"
