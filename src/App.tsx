@@ -22,14 +22,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-      <HomePage/>
-      {/* <EventViewPage/> */}
-      {/* <EventDetailPage /> */}
-      {/* <AboutSection/> */}
-=======
       <RouterProvider router={router} />
->>>>>>> 0950375 (Add React Router for navigation and update EventCard to handle routing)
     </div>
   );
 }
