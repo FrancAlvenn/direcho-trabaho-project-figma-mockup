@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getEvents } from "../../services/events.service";
+import { getEvents } from "../../services/events.service"
 import UsefulInfoSP from "./UsefulInfoSP";
 import PriceRange from "./PriceRange";
 import AboutSection from "./AboutSection";
@@ -25,7 +25,7 @@ const About = () => {
   }
 
   return (
-    <div className="flex bg-black w-full h-[1440px] min-h-screen mx-auto font-sans">
+    <div className="flex bg-black w-full h-[1440px] min-h-screen mx-auto font-sans mb-20">
       <div
         className="events-container flex flex-wrap justify-between pb-10 pt-10 bg-black bg-cover bg-center w-full h-[600px]"
         style={{ backgroundImage: `url(${event.card_image})` }}
