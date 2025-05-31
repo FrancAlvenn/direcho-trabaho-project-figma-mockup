@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getEvents } from "../../services/events.service";
-import { MapPin } from "@phosphor-icons/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const Tag = ({ text }) => (
   <span className="flex items-center justify-center w-[90px] h-[32px] text-[14px] text-white bg-[#C2202629] rounded-full border border-[#C22026] backdrop-blur-[16px] hover:bg-[#e4e4e8] hover:text-[#000000] transition-colors duration-200">
@@ -29,8 +30,8 @@ const AboutSection = () => {
         {event?.title || "Event Title"}
       </h1>
 
-      <p className="flex col-span-full text-left text-[16px] text-white ">
-        <MapPin size={22} />
+      <p className="flex col-span-full gap-2 text-left text-[16px] text-white ">
+        <FontAwesomeIcon icon={faLocationDot} style={{ fontSize: "22px" }} />
         {event?.location || "Location not available"}
       </p>
 
