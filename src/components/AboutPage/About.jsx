@@ -33,7 +33,7 @@ const About = () => {
         <div className="flex flex-col w-full lg:w-2/3 px-4 sm:px-8 md:px-[120px] mt-[16px] sm:mt-[8%] md:mt-[10%] lg:mt-[12%]">
           <AboutSection event={event} />
         </div>
-        <div className="flex flex-col w-full lg:w-1/3 px-4 sm:px-8 md:pr-[120px] mt-[16px] sm:mt-[8%] md:mt-[10%] lg:mt-[12%] gap-6">
+        <div className="flex flex-col w-full lg:w-1/3 px-4 sm:px-8 md:pr-[120px] mt-[16px] sm:mt-[8%] md:mt-[10%] lg:mt-[12%] ">
           <PriceRange event={event} />
           <UsefulInfoSP event={event} />
         </div>
