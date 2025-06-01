@@ -1,6 +1,8 @@
 import EventDetailPage from "../components/EventDetail/EventDetailPage";
 import EventsContainer from "../components/EventsCard/EventsContainer";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 
 const HomePage = () => {
   return (
@@ -19,6 +21,7 @@ const HomePage = () => {
         <EventDetailPage />
       </div>
       <EventsContainer title={"Upcoming Events"} />
+      <Footer/>
     </div>
   );
 };

@@ -95,12 +95,12 @@ const AboutSection = ({ event }) => {
         component="ul"
         sx={{
           mt: 2,
-          
+
           color: "#fff",
           fontSize: 16,
           listStyleType: "disc",
           listStylePosition: "inside",
-          
+
           margin: 0,
         }}
       >
@@ -121,7 +121,6 @@ const AboutSection = ({ event }) => {
         flexWrap="wrap"
         gap={2}
         maxWidth={691}
-        maxHeight={351}
       >
         {event.artists?.map((artist, idx) => (
           <Card
