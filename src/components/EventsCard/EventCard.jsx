@@ -1,6 +1,6 @@
 import { TicketIcon, HeartStraightIcon } from "@phosphor-icons/react";
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 const EventCard = ({ event }) => {
   const [liked, setLiked] = useState(false);
