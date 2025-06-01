@@ -1,84 +1,186 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { Card, CardContent, Typography, Box, Chip } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Tag = ({ text }) => (
-  <span className="flex items-center justify-center min-w-[90px] px-3 max-w-[200px] h-[32px] text-[14px] text-white bg-[#C2202629] rounded-full border border-[#C22026] backdrop-blur-[16px] hover:bg-[#e4e4e8] hover:text-[#000000] transition-colors duration-200">
-    {text}
-  </span>
+  <Chip
+    label={text}
+    sx={{
+      minWidth: 90,
+      maxWidth: 200,
+      height: 32,
+      fontSize: 14,
+      fontFamily: "'Open Sans', sans-serif",
+      color: "white",
+      backgroundColor: "#C2202629",
+      border: "1px solid #C22026",
+      backdropFilter: "blur(16px)",
+      "&:hover": {
+        backgroundColor: "#e4e4e8",
+        color: "#000000",
+      },
+    }}
+  />
 );
 
 const AboutSection = ({ event }) => {
   if (!event) {
-    return <div className="text-white">Loading...</div>;
+    return <Typography sx={{ color: "#fff" }}>Loading...</Typography>;
   }
 
   return (
-    <div className="flex flex-col space-y-4">
-      <h1 className="col-span-full text-left text-[40px] font-bold text-white">
+    <Box display="flex" flexDirection="column" gap={4}>
+      <Typography
+        variant="h2"
+        sx={{ fontSize: 40, fontWeight: "bold", color: "#fff" }}
+      >
         {event.title}
-      </h1>
+      </Typography>
 
-      <p className="flex col-span-full gap-2 text-left text-[16px] text-white ">
-        <FontAwesomeIcon icon={faLocationDot} style={{ fontSize: "22px" }} />
-        {event.location}
-      </p>
+      <Box display="flex" alignItems="center" gap={1}>
+        <FontAwesomeIcon
+          icon={faLocationDot}
+          style={{ fontSize: 22, color: "#fff" }}
+        />
+        <Typography sx={{ fontSize: 16, color: "#fff" }}>
+          {event.location}
+        </Typography>
+      </Box>
 
-      <p className="col-span-full text-left text-[16px] text-white ">
+      <Typography sx={{ fontSize: 16, color: "#fff" }}>
         {event.date_range?.start} - {event.date_range?.end}
-      </p>
+      </Typography>
 
-      <div className="flex gap-2 flex-wrap">
+      <Box display="flex" flexWrap="wrap" gap={1}>
         {event.tags?.map((tag, idx) => (
           <Tag key={idx} text={tag} />
         ))}
-      </div>
+      </Box>
 
-      <h3 className="col-span-full text-left font-bold text-[24px] text-white">
+      <Typography
+        variant="h4"
+        sx={{ fontSize: 24, fontWeight: "bold", color: "#fff" }}
+      >
         About the event
-      </h3>
-      <p className="col-span-full text-left text-[16px] text-white max-w-full sm:max-w-[687px]">
+      </Typography>
+      <Typography
+        sx={{
+          fontSize: 16,
+          color: "#fff",
+          maxWidth: { xs: "100%", sm: "687px" },
+        }}
+      >
         {event.about}
-      </p>
+      </Typography>
 
-      <h3 className="col-span-full text-left font-bold text-[20px] text-white">
+      <Typography
+        variant="h5"
+        sx={{ fontSize: 20, fontWeight: "bold", color: "#fff" }}
+      >
         Vibe
-      </h3>
-      <div className="flex gap-2 flex-wrap ">
+      </Typography>
+      <Box display="flex" flexWrap="wrap" gap={1}>
         {event.vibe?.map((tag, idx) => (
           <Tag key={idx} text={tag} />
         ))}
-      </div>
+      </Box>
 
-      <h3 className="col-span-full text-left font-bold text-[24px] text-white">
+      <Typography
+        variant="h4"
+        sx={{ fontSize: 24, fontWeight: "bold", color: "#fff" }}
+      >
         Similar to these Netflix shows
-      </h3>
-      <ul className="mt-2 list-disc pl-5 text-left text-[16px] text-white hover:text-[#9EB7D4] transition-colors duration-200">
+      </Typography>
+      <Box
+        component="ul"
+        sx={{
+          mt: 2,
+          
+          color: "#fff",
+          fontSize: 16,
+          listStyleType: "disc",
+          listStylePosition: "inside",
+          
+          margin: 0,
+        }}
+      >
         {event.similar_events?.map((tag, idx) => (
           <li key={idx}>{tag}</li>
         ))}
-      </ul>
+      </Box>
 
-      <h3 className="col-span-full text-left font-bold text-[24px] text-white">
+      <Typography
+        variant="h4"
+        sx={{ fontSize: 24, fontWeight: "bold", color: "#fff" }}
+      >
         Artists
-      </h3>
+      </Typography>
 
-      <div className="flex flex-wrap gap-3 max-w-[691px] max-h-[351px]">
-        {event.artists?.map((artist, idx) => {
-          return (
-            <span key={idx}>
-              <img
-                src={artist.image}
-                alt={artist.name}
-                className="w-[157px] h-[141px] object-cover border-2 rounded-t-[16px]"
-              />
-              <p className="w-[157px] h-[44px] bg-[#1e1f22] text-white text-center flex items-center justify-center rounded-b-[16px]">
+      <Box
+        display="flex"
+        flexWrap="wrap"
+        gap={2}
+        maxWidth={691}
+        maxHeight={351}
+      >
+        {event.artists?.map((artist, idx) => (
+          <Card
+            key={idx}
+            sx={{
+              width: 157,
+              borderRadius: 2,
+              overflow: "visible",
+              bgcolor: "transparent",
+              boxShadow: "none",
+              position: "relative",
+            }}
+          >
+            <Box
+              component="img"
+              src={artist.image}
+              alt={artist.name}
+              sx={{
+                width: "100%",
+                height: 141,
+                objectFit: "cover",
+                border: "2px solid #000",
+                borderRadius: "16px 16px 0 0",
+              }}
+            />
+            <CardContent
+              sx={{
+                height: 44,
+                width: "100%",
+                backgroundColor: "#1e1f22",
+                border: "2px solid #000",
+                borderTop: "none",
+                borderRadius: "0 0 16px 16px",
+                display: "flex",
+                alignItems: "center",
+                mt: "-11px",
+                p: 0,
+                position: "relative",
+                zIndex: 1,
+              }}
+            >
+              <Typography
+                sx={{
+                  fontFamily: "'Open Sans', sans-serif",
+                  color: "#fff",
+                  fontWeight: 600,
+                  textAlign: "left",
+                  paddingLeft: "12px",
+                  marginTop: "11px",
+                  fontSize: 14,
+                }}
+              >
                 {artist.name}
-              </p>
-            </span>
-          );
-        })}
-      </div>
-    </div>
+              </Typography>
+            </CardContent>
+          </Card>
+        ))}
+      </Box>
+    </Box>
   );
 };
 

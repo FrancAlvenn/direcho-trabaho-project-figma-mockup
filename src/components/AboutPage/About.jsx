@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getEvents } from "../../services/events.service"
+import { getEvents } from "../../services/events.service";
 import UsefulInfoSP from "./UsefulInfoSP";
 import PriceRange from "./PriceRange";
 import AboutSection from "./AboutSection";
+import { Box, Card } from "@mui/material";
 
 const About = () => {
-  const { event_id } = useParams(); 
+  const { event_id } = useParams();
   const [event, setEvent] = useState(null);
 
   useEffect(() => {
@@ -21,24 +22,61 @@ const About = () => {
   }, [event_id]);
 
   if (!event) {
-    return <div className="text-white p-6">Loading or Event Not Found</div>;
+    return <Box color="white" p={3}>Loading or Event Not Found</Box>;
   }
 
   return (
-    <div className="flex bg-black w-full h-[1440px] min-h-screen mx-auto font-sans mb-20">
-      <div
-        className="events-container flex flex-wrap justify-between pb-10 pt-10 bg-black bg-cover bg-center w-full h-[600px]"
-        style={{ backgroundImage: `url(${event.card_image})` }}
+    <Box
+      sx={{
+        bgcolor: "black",
+        width: "100%",
+        minHeight: "100vh",
+        pb: 6,
+        mb: 5,
+        fontFamily: "'Open Sans', sans-serif",
+      }}
+    >
+      <Card
+        sx={{
+          height: 600,
+          backgroundImage: `url(${event.card_image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          bgcolor: "black",
+          borderRadius: 0,
+          boxShadow: "none",
+          width: "100%",
+        }}
+        square
+      />
+
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          px: { xs: 2, sm: 4, md: 15 },
+          mt: "-324px",
+          gap: 4,
+        }}
       >
-        <div className="flex flex-col w-full lg:w-2/3 px-4 sm:px-8 md:px-[120px] mt-[16px] sm:mt-[8%] md:mt-[10%] lg:mt-[12%]">
+        <Box sx={{ flex: "1 1 65%", minWidth: 0 }}>
           <AboutSection event={event} />
-        </div>
-        <div className="flex flex-col w-full lg:w-1/3 px-4 sm:px-8 md:pr-[120px] mt-[16px] sm:mt-[8%] md:mt-[10%] lg:mt-[12%] gap-6">
+        </Box>
+        <Box
+          sx={{
+            flex: "1 1 30%",
+            minWidth: 0,
+            display: "flex",
+            flexDirection: "column",
+            gap: 3,
+          }}
+        >
           <PriceRange event={event} />
           <UsefulInfoSP event={event} />
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
