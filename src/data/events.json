@@ -47,16 +47,16 @@
   {
     "id": "event-002",
     "title": "SF Orchestra",
-    "tags": ["orchestra", "classical", "live"],
+    "tags": ["Orchestra", "Classical", "Live"],
     "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
     "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
-    "vibe": ["elegant", "thought-provoking"],
+    "vibe": ["Elegant", "Thought-provoking"],
     "location": "San Francisco, CA",
     "date_range": {
-      "start": "2025-07-10",
-      "end": "2025-07-10"
+      "start": "July 04, 2025",
+      "end": "July 10, 2025"
     },
-    "similar_events": ["event-003"],
+    "similar_events":  ["Glee", "Grease", "High School Musical", "Arrested Development"],
     "artists": [
       { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
       { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
@@ -74,7 +74,7 @@
     "useful_info": {
       "type_of_event": "Orchestra",
       "theatre": "SF Opera House",
-      "website": null,
+      "website": "sfoperahouse.com/about",
       "age_appropriate": "All Ages",
       "contact_number": null
     },
@@ -93,16 +93,16 @@
   {
     "id": "event-003",
     "title": "Jeffery Sampson",
-    "tags": ["theatre", "drama"],
+    "tags": ["Theatre", "Drama"],
     "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
     "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
-    "vibe": ["serious", "intellectual"],
+    "vibe": ["Serious", "Intellectual"],
     "location": "New York City, NY",
     "date_range": {
-      "start": "2025-08-05",
-      "end": "2025-08-05"
+      "start": "August 01, 2025",
+      "end": "August 05, 2025"
     },
-    "similar_events": ["event-002"],
+    "similar_events":  ["Glee", "Grease", "High School Musical", "Arrested Development"],
     "artists": [
       { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
       { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
@@ -120,7 +120,7 @@
     "useful_info": {
       "type_of_event": "Theatrical Performance",
       "theatre": "Downtown Playhouse",
-      "website": null,
+      "website": "theatre.com/jeffery-sampson",
       "age_appropriate": "16+",
       "contact_number": null
     },
@@ -139,16 +139,16 @@
   {
     "id": "event-004",
     "title": "SF Symphony Sound Box",
-    "tags": ["symphony", "experimental", "classical"],
+    "tags": ["Symphony", "Experimental", "Classical"],
     "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
     "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
-    "vibe": ["innovative", "artsy"],
+    "vibe": ["Innovative", "Artsy"],
     "location": "San Francisco, CA",
     "date_range": {
-      "start": "2025-09-01",
-      "end": "2025-09-01"
+      "start": "September 01, 2025",
+      "end": "September 10, 2025"
     },
-    "similar_events": ["event-002"],
+    "similar_events":  ["Glee", "Grease", "High School Musical", "Arrested Development"],
     "artists": [
       { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
       { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
@@ -166,7 +166,7 @@
     "useful_info": {
       "type_of_event": "Symphonic Experience",
       "theatre": "SF Symphony Hall",
-      "website": null,
+      "website": "sfoperahouse.com/about",
       "age_appropriate": "All Ages",
       "contact_number": null
     },
@@ -185,16 +185,16 @@
   {
     "id": "event-005",
     "title": "Moulin Rouge",
-    "tags": ["musical", "theatre", "romantic"],
+    "tags": ["Musical", "Theatre", "Romantic"],
     "about": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
     "short_description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
-    "vibe": ["romantic", "glamorous"],
+    "vibe": ["Romantic", "Glamorous"],
     "location": "New York City, NY",
     "date_range": {
-      "start": "2025-07-25",
-      "end": "2025-07-25"
+      "start": "July 25, 2025",
+      "end": "July 30, 2025"
     },
-    "similar_events": ["event-003"],
+    "similar_events":  ["Glee", "Grease", "High School Musical", "Arrested Development"],
     "artists": [
       { "id": "artist-001", "name": "Tom Xander", "image": "/assets/images/actor-1.png" },
       { "id": "artist-002", "name": "Tom Xander", "image": "/assets/images/actor-2.png" },
@@ -212,7 +212,7 @@
     "useful_info": {
       "type_of_event": "Musical Theatre",
       "theatre": "Broadway Theatre",
-      "website": null,
+      "website": "broadway.com/shows/moulin-rouge",
       "age_appropriate": "13+",
       "contact_number": null
     },
