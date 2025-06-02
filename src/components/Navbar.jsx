@@ -15,7 +15,7 @@ function Navbar() {
           className="h-[48px] w-[63px]"
         />
       </div>
-      <ul className="flex items-center">
+      <ul className="relative flex items-center">
         {/* Events */}
         <li className="text-white mr-[32px] flex items-center gap-[16.18px] cursor-pointer">
           <FontAwesomeIcon icon={faFilm} />
