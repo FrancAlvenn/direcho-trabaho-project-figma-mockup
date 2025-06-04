@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
+    <>
+    <Navbar />
     <div
       className="pb-10 pt-10"
       style={{
@@ -16,13 +18,14 @@ const HomePage = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <Navbar />
+      
       <div className="lg:px-20 pt-[60%] md:pt-[25%] lg:pt-[18%]">
         <EventDetailPage />
       </div>
       <EventsContainer title={"Upcoming Events"} />
       <Footer/>
     </div>
+    </>
   );
 };
 

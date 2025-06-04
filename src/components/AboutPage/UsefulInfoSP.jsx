@@ -76,6 +76,8 @@ const UsefulInfoSP = ({ event }) => {
             paddingBottom: "8px",
             width: "100%",
             px: 3,
+            py: 1,
+            fontSize: "24px",
           }}
         >
           Useful info
