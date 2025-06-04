@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faFilm } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import NavMenu from "./NavMenu";
 import { useNavigate } from "react-router";
 function Navbar() {
-
+  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
   return (
@@ -15,7 +17,7 @@ function Navbar() {
           onClick={() => navigate("/")}
         />
       </div>
-      <ul className="flex items-center">
+      <ul className="relative flex items-center">
         {/* Events */}
         <li className="text-white mr-[32px] flex items-center gap-[16.18px] cursor-pointer">
           <FontAwesomeIcon icon={faFilm} />
@@ -24,7 +26,10 @@ function Navbar() {
 
         <li className="flex gap-[10.25px] bg-[#1E1F22] h-[40px] rounded-full items-center">
           {/* Hamburger Menu */}
-          <div className="flex flex-col gap-[6px] text-white ml-[14.25px] my-[14px] cursor-pointer">
+          <div
+            className="flex flex-col gap-[6px] text-white ml-[14.25px] my-[14px] cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             <span className="border-[1.5px] w-[19.5px] rounded-sm"></span>
             <span className="border-[1.5px] w-[19.5px] rounded-sm"></span>
             <span className="border-[1.5px] w-[19.5px] rounded-sm"></span>
@@ -35,6 +40,9 @@ function Navbar() {
             <FontAwesomeIcon icon={faUser} />
           </div>
         </li>
+
+        {/* Nav Menu */}
+        {isOpen && <NavMenu />}
       </ul>
     </nav>
   );
