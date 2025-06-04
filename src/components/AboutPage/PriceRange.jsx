@@ -32,7 +32,7 @@ const PriceRange = ({ event }) => {
           >
             Price range
           </Typography>
-          <Typography sx={{ fontSize: "12px", color: "#FFFFFF", mt: 1 }}>
+          <Typography sx={{ fontSize: "12px", color: "#FFFFFF" }}>
             {event?.price_range ? (
               <>
                 {event.price_range.currency || "$"}

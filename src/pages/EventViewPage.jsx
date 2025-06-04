@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const EventViewPage = () => {
-  const eventId = useParams().event_id;
 
   return (
     <div className="bg-black pb-10">
@@ -14,7 +13,6 @@ const EventViewPage = () => {
       <EventsContainer title="More like this" />
       <Footer/>
     </div>
-    
   );
 };
 

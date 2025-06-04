@@ -2,17 +2,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faFilm } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import NavMenu from "./NavMenu";
-
+import { useNavigate } from "react-router";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
-    <nav className="absolute top-0 left-0 right-0 h-[48px] mx-[32px] mt-[20px] flex justify-between items-center">
+    <nav className="fixed top-0 left-0 right-0 h-[68px] px-[32px]  flex justify-between items-center cursor-pointer z-50">
       <div>
         <img
           src="../assets/images/nav_logo.png"
           alt="logo"
           className="h-[48px] w-[63px]"
+          onClick={() => navigate("/")}
         />
       </div>
       <ul className="relative flex items-center">
