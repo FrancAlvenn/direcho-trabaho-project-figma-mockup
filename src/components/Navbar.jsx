@@ -8,12 +8,12 @@ function Navbar() {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 h-[68px] px-[32px]  flex justify-between items-center cursor-pointer z-50">
+    <nav className="fixed top-0 left-0 right-0 h-[68px] px-[32px]  flex justify-between items-center z-50">
       <div>
         <img
           src="../assets/images/nav_logo.png"
           alt="logo"
-          className="h-[48px] w-[63px]"
+          className="h-[48px] w-[63px] cursor-pointer"
           onClick={() => navigate("/")}
         />
       </div>
